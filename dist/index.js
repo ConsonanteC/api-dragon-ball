@@ -7,9 +7,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const ul = document.querySelector(".ul");
+const ul = document.querySelector(".item-list");
 document.addEventListener("DOMContentLoaded", () => __awaiter(void 0, void 0, void 0, function* () {
-    const data = yield getResponse;
+    const data = yield getResponse();
     data.map((character) => {
         console.log(character);
         const li = document.createElement("li");

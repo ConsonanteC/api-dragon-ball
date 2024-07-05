@@ -1,9 +1,9 @@
 import {IResponseDB, Item} from "./interfaces/response-db";
 
-const ul = document.querySelector(".ul") as HTMLUListElement;
+const ul = document.querySelector(".item-list") as HTMLUListElement;
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const data: Item[] = await getResponse;
+    const data: Item[] = await getResponse();
 
     data.map ((character: Item) => {
         console.log(character);
