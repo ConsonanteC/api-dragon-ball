@@ -65,10 +65,9 @@ li:hover {
 }
 
 li img {
-    width: 60%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: 50%; /* Establece una altura fija para las imágenes */
+    width: 60%; 
+    height: 50%; 
     object-fit: contain; /* Escala la imagen para llenar el contenedor sin distorsionarla */
- /* Agrega bordes redondeados a las imágenes */
 }
 
 @media (max-width: 768px) {

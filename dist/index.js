@@ -11,7 +11,6 @@ const ul = document.querySelector(".item-list");
 document.addEventListener("DOMContentLoaded", () => __awaiter(void 0, void 0, void 0, function* () {
     const data = yield getResponse();
     data.map((character) => {
-        console.log(character);
         const li = document.createElement("li");
         const name = document.createElement("h4");
         const image = document.createElement("img");

@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const data: Item[] = await getResponse();
 
     data.map ((character: Item) => {
-        console.log(character);
 
         const li = document.createElement("li") as HTMLLIElement;
         const name = document.createElement("h4") as HTMLHeadingElement; 
