@@ -51,21 +51,31 @@ li {
     overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
+li{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}  
+
 li:hover {
     transform: scale(1.05);
+    border: solid 3px;
+    box-shadow: white 0px 0px 10px;
 }
 
 li img {
     width: 60%; /* Ajusta el ancho de la imagen al 100% del contenedor */
     height: 50%; /* Establece una altura fija para las imágenes */
     object-fit: contain; /* Escala la imagen para llenar el contenedor sin distorsionarla */
- /* Agrega bordes redondeados a las imágenes *
+ /* Agrega bordes redondeados a las imágenes */
 
+}
 @media (max-width: 768px) {
     li {
          width: calc(50% - 100px); /*2 tarjetas por fila en pantallas más pequeñas */
     }
-
+}
 
 @media (max-width: 480px) {
     li {

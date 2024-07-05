@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         li.appendChild(gender);
         li.appendChild(affiliation);
         li.appendChild(deleteAt);
-
         ul.appendChild(li);
     })
 });
