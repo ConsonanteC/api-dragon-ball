@@ -1,4 +1,4 @@
- body {
+body {
     background-image: url(/img/6544063.jpg);
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,16 +9,13 @@
 h1 {
     text-align: center;
     margin-top: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .wrapper {
     display: flex;
     justify-content: center;
     margin: 20px;
-    img {
-        width: 50%;
-    }
 }
 
 .item-list {
@@ -36,23 +33,32 @@ li {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: calc(33.333% - 20px); /* 3lis per row, considering the gap */
+    width: calc(25% - 20px); /* 4 tarjetas por fila, considerando el espacio */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    text-align: center;
+    overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
 li:hover {
     transform: scale(1.05);
 }
 
+li img {
+    width: 60%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: 50%; /* Establece una altura fija para las imágenes */
+    object-fit: contain; /* Escala la imagen para llenar el contenedor sin distorsionarla */
+ /* Agrega bordes redondeados a las imágenes *
+
 @media (max-width: 768px) {
     li {
-        width: calc(50% - 20px); /* 2lis per row on smaller screens */
+        width: calc(50% - 20px); /* 2 tarjetas por fila en pantallas más pequeñas */
     }
 }
 
 @media (max-width: 480px) {
     li {
-        width: 100%; /* 1li per row on very small screens */
+        width: 100%; /* 1 tarjeta por fila en pantallas muy pequeñas */
     }
 }
+

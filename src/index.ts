@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         const maxKi = document.createElement("p") as HTMLParagraphElement;
         const race = document.createElement("p") as HTMLParagraphElement;
         const gender = document.createElement("p") as HTMLParagraphElement;
-        const description = document.createElement("p") as HTMLParagraphElement;
         const affiliation = document.createElement("p") as HTMLParagraphElement;
         const deleteAt = document.createElement("deleteAt") as HTMLInputElement;
 
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         maxKi.innerText = `Max Ki: ${character.maxKi}`;
         race.innerText = `Race: ${character.race}`;
         gender.innerText = `Gender: ${character.gender}`;
-        description.innerText = `Description: ${character.description}`;
         affiliation.innerText = `Affiliation: ${character.affiliation}`;
         deleteAt.type = "checkbox";
 
@@ -36,7 +34,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         li.appendChild(maxKi);
         li.appendChild(race);
         li.appendChild(gender);
-        li.appendChild(description);
         li.appendChild(affiliation);
         li.appendChild(deleteAt);
 

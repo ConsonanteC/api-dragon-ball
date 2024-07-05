@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => __awaiter(void 0, void 0, vo
         const maxKi = document.createElement("p");
         const race = document.createElement("p");
         const gender = document.createElement("p");
-        const description = document.createElement("p");
         const affiliation = document.createElement("p");
         const deleteAt = document.createElement("deleteAt");
         name.innerText = character.name;
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => __awaiter(void 0, void 0, vo
         maxKi.innerText = `Max Ki: ${character.maxKi}`;
         race.innerText = `Race: ${character.race}`;
         gender.innerText = `Gender: ${character.gender}`;
-        description.innerText = `Description: ${character.description}`;
         affiliation.innerText = `Affiliation: ${character.affiliation}`;
         deleteAt.type = "checkbox";
         li.appendChild(name);
@@ -38,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => __awaiter(void 0, void 0, vo
         li.appendChild(maxKi);
         li.appendChild(race);
         li.appendChild(gender);
-        li.appendChild(description);
         li.appendChild(affiliation);
         li.appendChild(deleteAt);
         ul.appendChild(li);
