@@ -69,8 +69,8 @@ li img {
     height: 50%; /* Establece una altura fija para las imágenes */
     object-fit: contain; /* Escala la imagen para llenar el contenedor sin distorsionarla */
  /* Agrega bordes redondeados a las imágenes */
-
 }
+
 @media (max-width: 768px) {
     li {
          width: calc(50% - 100px); /*2 tarjetas por fila en pantallas más pequeñas */
