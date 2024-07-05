@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => __awaiter(void 0, void 0, vo
 }));
 function getResponse() {
     return __awaiter(this, void 0, void 0, function* () {
-        const response = yield fetch("https://dragonball-api.com/api/characters");
+        const response = yield fetch("https://dragonball-api.com/api/characters?limit=58");
         let data = yield response.json();
         return data.items;
     });

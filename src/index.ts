@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function getResponse (): Promise<Item[]> {
-    const response = await fetch ("https://dragonball-api.com/api/characters");
+    const response = await fetch ("https://dragonball-api.com/api/characters?limit=58");
     let data: IResponseDB = await response.json();
 
     return data.items;
