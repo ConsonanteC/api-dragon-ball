@@ -51,10 +51,10 @@ li {
     overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
-li{
+li {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
 }  
 
